@@ -3,10 +3,10 @@ const person = {
   age : 34,
   phone : "0987654321",
   address: "Bari nai",
-  // location :{
-  //   zila: "Moulvibazar",
-  //   city: 'sadar'
-  // },
+  location :{
+    zila: "Moulvibazar",
+    city: 'sadar'
+  },
   p:[1, 2, 3, 4, 5]
 }
 // const person1 = {...person};
@@ -22,6 +22,9 @@ const person = {
 // console.log(zila, city);
 // console.log(amarNam);
 
-const {name, ...rest} = person;
-console.log(name);
-console.log(rest);
+// const {name, ...rest} = person;
+// console.log(name);
+// console.log(rest);
+const {location:{city}} = person;
+// console.log(location)
+console.log(city)
